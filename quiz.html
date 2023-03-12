@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="./img/quiz.jpg">
+  <title>Quiz</title>
+</head>
+<body onload="javascript:aoCarregar();">
+  <div class="container">
+    <h1>Banco De Dados</h1>
+    <div class="row">
+      <div class="col">
+        <div class="jumbotron">
+          <h1 class="display-4">Quiz</h1>
+          <form class="form-inline">
+            <div class="form-group mx-sm-3 mb-8">
+            <p class="lead">Responda as questoes abaixo !</p>
+            </form>
+            <hr class="my-4">
+          </div>
+          <div>
+            <input type="hidden" id="perguntaActual" value=""/><br> 
+            <div id="pergunta1"><h2>1 - O que significa SQL?</h2>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="resp1" id="n1" value="01">
+                <label class="form-check-label" for="exampleRadios2">Structure Query Language</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="resp1" id="p1" value="01">
+                <label class="form-check-label" for="exampleRadios2">Structure Language Query</label>
+              </div>
+              </div>
+              <div id="pergunta2"><h2>2 - A linguagem SQL é a mesma em todos os bancos de dados?</h2>
+              <div class="form-check">
+               <input class="form-check-input" type="radio" name="resp2" id="p2" value="02">
+                <label class="form-check-label" for="exampleRadios2">Sim</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="resp2" id="n2" value="02">
+                <label class="form-check-label" for="exampleRadios2">Nao</label>
+              </div>
+              </div>
+            <div id="pergunta3"><h2>3 - Para que serve o ponto-e-vírgula no final das linhas?</h2>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="resp3" id="n3" value="opcao1">
+                <label class="form-check-label" for="exampleRadios1">Terminar um comando</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="resp3" id="p3" value="opcao2">
+                <label class="form-check-label" for="exampleRadios2">Iniciar um comando </label>
+              </div>
+            </div>
+              <div id="pergunta4"><h2>4 - Para que serve a (chave primária) ?</h2>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="resp4" id="n4" value="opcao1">
+                <label class="form-check-label" for="exampleRadios1">Serve para identificar uma entidade</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="resp4" id="p4" value="opcao2">
+                <label class="form-check-label" for="exampleRadios2">Serve para identificar uma conexão</label>
+              </div>
+              </div>
+              <div id="pergunta5"><h2>5 - O que é um banco de dados?</h2>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="resp5" id="p5" value="opcao1">
+                <label class="form-check-label" for="exampleRadios1">É uma estrutura de leitura de dados</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="resp5" id="n5" value="opcao2">
+                <label class="form-check-label" for="exampleRadios2">É um local onde é possível armazenar dados</label>
+              </div>
+              </div>
+              <div id="pergunta6"><h2>6 - Uma entidade é representada por um conjunto de?</h2>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="resp6" id="p6" value="opcao1">
+                <label class="form-check-label" for="exampleRadios1">Dados</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="resp6" id="n6" value="opcao2">
+                <label class="form-check-label" for="exampleRadios2">Atributos</label>
+              </div>
+              </div>
+              <div id="pergunta7"><h2>7 - Atributos são os componentes das?</h2>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="resp7" id="n7" value="opcao1">
+                <label class="form-check-label" for="exampleRadios1">Entidade</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="resp7" id="p7" value="opcao2">
+                <label class="form-check-label" for="exampleRadios2">Corporações</label>
+              </div>
+              </div>
+              <div id="pergunta8"><h2>8 - MySQL é um sistema gerenciador de?</h2>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="resp8" id="n8" value="opcao1">
+                <label class="form-check-label" for="exampleRadios1">Banco de dados</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="resp8" id="p8" value="opcao2">
+                <label class="form-check-label" for="exampleRadios2">Banco de estrutura</label>
+              </div>
+               </div>
+              <div id="pergunta9"><h2>9 - A tabela é um conjunto de?</h2>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="resp9" id="p9" value="opcao1">
+                <label class="form-check-label" for="exampleRadios1">Listas</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="resp9" id="n9" value="opcao2">
+                <label class="form-check-label" for="exampleRadios2">Dados</label>
+              </div>
+              </div>
+             <div id="pergunta10"><h2>10 - A principal aplicação de Banco de Dados é?</h2>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="resp10" id="n10" value="opcao1">
+                <label class="form-check-label" for="exampleRadios1">Controle de operações empresariais</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="resp10" id="p10" value="opcao2">
+                <label class="form-check-label" for="exampleRadios2">Controle de operações aritmética</label>
+              </div>
+               <p></p>
+               <button type="button" onclick="verificar()" class="btn btn-primary mb-2">Verificar</button>
+                <p></p>
+                 <h1 class="display-4" style="color:#ff0000;" id="msg"></h1>
+                <h1 class="display-4" id="resposta_quiz"></h1>
+                <h1 class="display-4" id="mensagem"></h1>
+             </div>
+            </div>
+          <p></p>
+          <button type="button" onclick="perguntaAnterior()" class="btn btn-primary mb-2">Pergunta anterior</button>
+          <button type="button" onclick="proximaPergunta()" class="btn btn-primary mb-2">Pergunta seguinter</button>  
+          <a href="index.html"><button class="btn btn-primary mb-2">Voltar</button> </a>  
+         </div>
+
+        </div>
+      </div>
+
+
+
+
+
+     <script type="text/javascript">
+      alert('Por Favor Responda com Atenção !');
+      function verificar(){
+        var erros = 0;
+        var acertos = 0;
+
+  
+    if(document.getElementById("n1").checked){
+              acertos++; 
+      }
+    if (document.getElementById("n2").checked) {
+      acertos++; 
+    }
+    if (document.getElementById("n3").checked) {
+          acertos++; 
+        }
+    if (document.getElementById("n4").checked) {
+          acertos++; 
+        }
+    if (document.getElementById("n5").checked) {
+          acertos++; 
+        }
+    if (document.getElementById("n6").checked) {
+          acertos++; 
+        }
+    if (document.getElementById("n7").checked) {
+          acertos++; 
+        }
+    if (document.getElementById("n8").checked) {
+          acertos++; 
+        }
+    if (document.getElementById("n9").checked) {
+          acertos++; 
+        }
+    if (document.getElementById("n10").checked) {
+          acertos++; 
+        }
+  
+      document.getElementById('resposta_quiz').innerHTML = acertos;
+      document.getElementById('msg').innerHTML= "Acertos:";
+     
+
+      if (acertos >= 7 && acertos <= 10) {
+         document.getElementById('mensagem').innerHTML = "Parabéns você realmente conhece muito sobre este assunto";
+      }
+      if (acertos >= 4 &&  acertos <= 6) {
+         document.getElementById('mensagem').innerHTML = "Muito bem, você demonstrou conhecer um pouco sobre esse assunto.";
+      }
+        if (acertos >= 0 && acertos <= 3) {
+         document.getElementById('mensagem').innerHTML = "Navegue neste site e adquira conhecimentos sobre esse assunto e depois tente novamente para verificar o que aprendeu";
+      }
+
+    }
+
+      var maxPerguntas = 10;
+
+      function aoCarregar(){
+        escondeTudo();
+        document.getElementById('pergunta1').style.display = "block";
+        document.getElementById('perguntaActual').value = 1;
+      }
+      function escondeTudo(){
+        for( i = 1; i <= maxPerguntas; i++){
+          document.getElementById('pergunta'+i).style.display = "none";
+        }
+      }
+      function perguntaAnterior(){
+        actual = document.getElementById('perguntaActual').value;
+        if(actual > 1){
+          escondeTudo();
+          document.getElementById('perguntaActual').value--;
+          document.getElementById('pergunta'+document.getElementById('perguntaActual').value).style.display = "block";
+        }
+      }
+
+      function proximaPergunta(){
+        actual = document.getElementById('perguntaActual').value;
+        if(actual >= 1 && actual < maxPerguntas){
+          escondeTudo();
+          document.getElementById('perguntaActual').value++;
+          document.getElementById('pergunta'+document.getElementById('perguntaActual').value).style.display = "block";
+        }
+      }
+
+    </script>
+
+
+
+
+
+
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+  </html

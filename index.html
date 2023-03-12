@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" type="image/png" href="./img/icone.png">
+  <title>Banco De Dados</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="./img/quiz.jpg">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">BANCO DE DADOS</div>
+      <div class="list-group list-group-flush">
+        <a href="#conceito" class="list-group-item list-group-item-action bg-light">Conceito</a>
+        <a href="#utilidade" class="list-group-item list-group-item-action bg-light">Utilidade</a>
+        <a href="#relacionais" class="list-group-item list-group-item-action bg-light">Bancos relacionais</a>
+        <a href="#entidades" class="list-group-item list-group-item-action bg-light">Entidades ou tabelas</a>
+        <a href="#atributos " class="list-group-item list-group-item-action bg-light">Atributos ou campos</a>
+        <a href="#registros" class="list-group-item list-group-item-action bg-light">Registros</a>
+        <a href="#tipos" class="list-group-item list-group-item-action bg-light">Tipos de dados</a>
+        <a href="#chave" class="list-group-item list-group-item-action bg-light">Chave-primárias</a>
+        <a href="#sql" class="list-group-item list-group-item-action bg-light">Linguagem SQL</a>
+        <a href="#mysql" class="list-group-item list-group-item-action bg-light">Gerenciador MySQL</a>
+        <a href="#quiz" class="list-group-item list-group-item-action bg-light">Quiz</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">Menu</button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      <div id="cabeçalho"><img class="mb-4" src="./img/banco1.png" width=""></div>
+
+      <div  class="p-5" div class="col-lg-6" class="container-fluid">
+        <h1 >Banco de Dados</h1>
+        <p style="text-align:justify;">Um banco de dados (em inglês, database) é um local onde é possível armazenar dados de maneira estruturada e com a menor redundância possível. Estes dados devem poder ser utilizados por programas e usuários diferentes. Assim, a noção básica de dados é acoplada a uma rede, a fim de poder reunir estas informações, daí o nome banco.</p>
+        <div id="cabeçalho"><img class="mb-4" src="./img/banco4.gif" width="300"></div>
+        <p id="conceito"></p>
+        <h2>Conceito</h2>
+        <p style="text-align:justify;">Bancos de dados ou bases de dados são conjuntos de arquivos relacionados entre si com registros sobre pessoas, lugares ou coisas. São coleções organizadas de dados que se relacionam de forma a criar algum sentido (Informação) e dar mais eficiência durante uma pesquisa ou estudo.São de vital importância para empresas e há duas décadas se tornaram a principal peça dos sistemas de informação. Normalmente existem por vários anos sem alterações em sua estrutura.<p style="text-align:justify;"> São operados pelos Sistemas Gerenciadores de Bancos de Dados (SGBD), que surgiram na década de 70.Antes destes, as aplicações usavam sistemas de arquivos do sistema operacional para armazenar suas informações. Na década de 80, a tecnologia de SGBD relacional passou a dominar o mercado, e atualmente utiliza-se praticamente apenas ela.Outro tipo notável é o SGBD Orientado a Objetos, para quando sua estrutura ou as aplicações que o utilizam mudam constantemente. </p><p style="text-align:justify;">A principal aplicação de Banco de Dados é controle de operações empresariais. Outra aplicação também importante é gerenciamento de informações de estudos, como fazem os Bancos de Dados Geográficos, que unem informações convencionais com espaciais.</p>
+        <div id="cabeçalho"><img class="mb-4" src="./img/banco7.png" width="500"></div>
+      </div>
+      <div class="p-5" class="col-lg-6" class="container-fluid">
+        <p id="utilidade"></p>
+        <h2>Utilidade</h2>
+        <p style="text-align:justify;">Um banco de dados permite colocar dados à disposição de usuários para uma consulta, uma introdução ou uma atualização, assegurando-se dos direitos atribuídos aos mesmos. Isso é ainda mais útil quando os dados informáticos são numerosos. Um banco de dados pode ser local, ou seja, utilizável em um dispositivo por um usuário, ou repartido, isto é, quando as informações são armazenadas em dispositivos remotos e acessíveis pela rede. </p><p style="text-align:justify;"> A grande vantagem do uso dos bancos de dados é a possibilidade de poderem ser acessados por vários usuários, simultaneamente</p>
+        <P> Os Bancos de Dados fazem parte do nosso dia-a-dia:</P>
+        <p>- Operação bancária</p>
+        <p>- Reserva de hotel</p>
+        <p>- Compra de passagens aéreas</p>
+        <p>- Catálogo informatizado de uma biblioteca</p>
+        <p>- Matrícula em uma disciplina da universidade</p>
+        <p>- Compras pela internet</p>
+      </div>
+      <p id="relacionais"></p>
+      <div  class="p-5" class="container-fluid">
+        <h2>Bancos relacionais</h2>
+        <p style="text-align:justify;" >O modelo relacional se destaca pela simplicidade e flexibilidade, utilizando como base os mesmo conceitos dos arquivos de dados. Os dados são armazenados em tabelas que, por sua vez, são compostas de campos e registros.</p>
+        <p style="text-align:justify;">O banco de dados relacional foi criado com base na teoria matemática de conjuntos, e, por isso, seus componentes principais supracitados também podem ser conhecidos por seus correspondentes em linguagem matemática. Os campos podem ser chamados de atributos, os registros são chamados de tuplas, e as tabelas são conhecidas como relação.</p>
+        <p style="text-align:justify;">A estrutura pode se comparada a uma planilha eletrônica, com suas linhas (tuplas) e colunas (atributos). O conteúdo de um conjunto linha-coluna específico é denominado célula, tanto para a planilha eletrônica como para o banco de dados relacional. A célula é responsável por conter o valor do atributo que, por definição, deve ser um valor atômico.</p>
+        <div id="cabeçalho"><img class="mb-4" src="./img/banco6.png" width="600"></div>
+      </div>
+      <p id="entidades"></p>
+      <div class="p-5" class="container-fluid">
+        <h2>Entidades ou tabelas</h2>
+        <p>O conceito de um conjunto de entidades corresponde à noção de definição de tipo usada em linguagens de programação.</p>
+        <P style="text-align:justify;">Um conjunto de entidades (entity set) é um conjunto de entidades do mesmo tipo. O conjunto de todas as pessoas com conta em um banco, por exemplo, pode ser definido como o conjunto de todas as entidades cliente. Similarmente, o conjunto de entidades conta pode representar o conjunto de todas as contas de um banco particular. É convenção adotar nomes de conjuntos de entidades no singular, mas não é obrigatório</P>
+        <P style="text-align:justify;">Conjuntos de entidades não precisam ser disjuntos. Por exemplo, é possível definir o conjunto de entidades de todos os funcionários de um banco (funcionários) e o conjunto de todos os clientes do banco (clientes). Uma entidade pessoa pode ser uma entidade funcionário, uma entidade cliente, ambas ou nenhuma delas.</P>
+        <p style="text-align:justify;">Uma entidade é representada por um conjunto de atributos. Possíveis atributos do conjunto de entidades cliente podem ser nome-cliente, cpf, rua e cidade-cliente. Possíveis atributos do conjunto de entidade conta são número-conta e saldo. Para cada atributo, existe um conjunto de valores permitidos chamado domínio daquele atributo. O domínio do atributo nome-cliente pode ser o conjunto de todas as cadeias de texto (strings) de um certo tamanho. Assim, o domínio do atributo número-conta pode ser o conjunto de todos os inteiros positivos. O atributo idade de uma entidade pessoa poderia ter como domínio os números inteiros entre 0 e 150.</p>
+        <p style="text-align:justify;">A tabela é um conjunto de dados dispostos em número infinito de colunas e número ilimitado de linhas (ou tuplas). As colunas são tipicamente consideradas os campos da tabela, e caracterizam os tipos de dados que deverão constar na tabela (numéricos, alfa-numéricos, datas, coordenadas, etc). O número de linhas pode ser interpretado como o número de combinações de valores dos campos da tabela, e pode conter linhas idênticas, dependendo do objectivo. A forma de referenciar inequivocamente uma única linha é através da utilização de uma chave primária.</p>
+        <div id="cabeçalho"><img class="mb-4" src="./img/banco5.png" width="600"></div>
+      </div>
+      <p id="atributos"></p>
+      <div  class="p-5" class="container-fluid">
+        <h2>Atributos ou Campos</h2>
+        <p style="text-align:justify;" >Num banco de dados, atributos são os componentes das entidades, ou nerdamente falando, as skills e o item set de uma entidade. Isso aparece muito no modelo relacional, que aquele das caixas cheias de informações, com tracinhos e linhas e números, mas não aparecem diretamente no modelo entidade-relacionamento, que aquele cheio de quadrados, losangos, octógonos e outras figuras geométricas.</p>
+        <p style="text-align:justify;" >Uma entidade é representada por um conjunto de atributos. Os atributos podem ser simples, composto, multivalorado ou determinante.</p>
+        <p style="text-align:justify;" >Nome, endereço, telefone e cidade, por exemplo, são atributos da entidade Clientes. Enquanto que salário, cargo e departamento são atributos da entidade funcionários.</p>
+        <p style="text-align:justify;" >Existem quatro tipos de atributos: simples, composto, multivalorado e determinante</p>
+        <p style="text-align:justify;" >Atributos Simples ou Atômicos: São os atributos que não são divisíveis. Como por exemplo, o atributo CPF, este não pode ser dividido em mais atributos.</p>
+        <p style="text-align:justify;" >Atributos Compostos: Podem ser divididos em várias partes com significados independentes. O atributo Endereço de um funcionário, por exemplo, pode ser dividido em Rua, Número e Bairro.</p>
+        <p style="text-align:justify;" >Atributos Monovalorados: São aqueles que possuem apenas um valor para aquela entidade. O atributo número da casa, por exemplo, só pode receber um valor.</p>
+        <p style="text-align:justify;" >Atributos multivalorados: podem assumir diversos valores. Como por exemplo, o atributo Telefone de um funcionário, que pode assumir diversos valores.</p>
+        <p style="text-align:justify;" >Atributos Derivados: Em alguns casos, dois ou mais atributos estão relacionados, por exemplo, a idade e data de nascimento de um funcionário. Para um determinado funcionário, podemos determinar a sua idade por meio da data de nascimento e da data atual. Atributos como a idade são chamados de atributos derivados.</p>
+        <p style="text-align:justify;" >Atributo-chave: Tipo de atributo cujos valores são distintos para cada entidade em um conjunto de entidades. O RG de um funcionário, por exemplo, constitui um atributo-chave para o tipo de entidades FUNCIONÁRIO. Algumas vezes, um conjunto de atributos pode formar uma chave. Mais do que isso, alguns tipos de entidades podem ter mais que um atributo-chave.</p>
+        <div id="cabeçalho"><img class="mb-4" src="./img/banco8.jpg" width="600"></div>
+      </div>
+      <p id="registros"></p>
+      <div class="p-5" class="container-fluid">
+        <h2>Registros</h2>
+        <div id="cabeçalho"><img class="mb-4" src="./img/banco9.jpg" width="600"></div>
+        <p style="text-align:justify;" >Um registro é composto por um grupo de campos relacionados. Outra forma de dizer, um registro contém uma coleção de atributos (campos) relacionados a uma entidade como uma pessoa ou produto. Olhando para a lista de apoiadores de controle de armas, tabela acima, o nome, sobrenome, endereço, cidade, estado, cep, telefone e CPF de um único indivíduo constitui um registro.</p>
+      </div>
+      <p id="tipos"></p>
+      <div class="p-5" class="container-fluid">
+        <h2>Tipo de Dados</h2>
+        <p style="text-align:justify;" >Tipos de dados são uma forma de classificar as informações que serão armazenados no banco de dados..</p><p style="text-align:justify;" >Entender os tipos de dados que podem ser armazenados no banco e a que situações se adequam é importante para projetar um banco de dados o mais eficiente possível</p>
+        <div id="cabeçalho"><img class="mb-4" src="./img/banco10.jpg" width="600"></div>
+        <p style="text-align:justify;">MySQL tem todos os tipos numéricos possíveis, o que inclui exatos, aproximados, inteiros, de ponto fixo, ponto flutuante etc.</p>
+      </div>
+      <p id="chave"></p>
+      <div class="p-5" class="container-fluid">
+        <h2>Chave-Primária</h2>
+        <p style="text-align:justify;" >Chave primária é um conceito muito importante que está diretamente ligado à possibilidade de se consultar dados de tabelas do banco de dados. Uma chave primária é um atributo ou conjunto de atributos que identifica unicamente um registro na tabela e que por isso não pode ser repetido, pois caso contrário não teria como diferenciar um registro de outro quando fossemos consultá-los.</p><p style="text-align:justify;" >Podemos definir um atributo como sendo chave primária explicitamente, ou seja, incluímos um campo contador que é incrementado em um a cada novo registro inserido ou então algum atributo que temos certeza que identifica unicamente um registro, como o número do CPF num cadastro de pessoa.</p>
+        <div id="cabeçalho"><img class="mb-4" src="./img/banco11.jpg" width="500"></div>
+      </div>
+      <p id="sql"></p>
+      <div class="p-5" class="container-fluid">
+        <h2>Linguagem SQL</h2>
+        <p style="text-align:justify;" >A linguagem SQL surgiu em meados da década de 70, sendo resultado de um estudo de E. F. Codd, membro do laboratório de pesquisa da IBM em San Jose, Califórnia. Este estudo tinha foco em desenvolver uma linguagem que adapta-se ao modelo relacional.</p><p style="text-align:justify;" >O primeiro sistema de BD baseado em SQL tornou-se comercial no final dos anos 70 juntamente com outros sistema de BD’s relacionais.</p><p style="text-align:justify;">O sucesso da linguagem SQL foi tão grande que obrigou o ANSI (American National Standarts Institute), a padronizar as implementações da linguagem, assim, nos dias de hoje, a maior parte de BD’s seguem criteriosamente esta padronização, podendo ter algumas variações, mais mesmo assim não afetando na padronização global da linguagem tornando assim a portabilidade mais fácil, se seguida de forma adequada pelo DBA.</p>
+      </div>
+        
+        <div id="cabeçalho"><img class="mb-4" src="./img/sql1.png" width="500"></div>
+        <div class="p-5" class="container-fluid">
+        <h2>Inserindo dados: INSERT SQL</h2>
+        <p>O comando para inclusão no banco de dados é o INSERT, que possui a seguinte estrutura:</p>
+        <p>Sintaxe do comando insert</p>
+        <span class="badge badge-secondary">INSERT INTO nome_tabela (lista-de-campos)</span>
+        <p><span class="badge badge-secondary">VALUES (lista_dados)</span></p>
+        <p>OU</p>
+        <p><span class="badge badge-secondary">INSERT INTO nome_tabela  VALUES (lista_dados)</span></p>
+        <p>Exemplos:</p>
+        <p><span class="badge badge-secondary">INSERT INTO EMPREGADOS(CODIGO, NOME, SALARIO, SECAO)</span></p>
+        <p><span class="badge badge-secondary">VALUES(1, "HELBERT CARVALHO", 1.500, 1)</span></p>
+        <p><span class="badge badge-secondary">INSERT INTO EMPREGADOS VALUES(1,"HELBERT CARVALHO",1500,1)</span></p>
+        <p>Onde:</p>
+        <p style="text-align:justify;"><b>-Nome_tabela:
+        </b> nome da tabela no qual será inserido os dados.­<br /><b>-Lista-de-campos:
+        </b> nome das colunas que receberão os valores.
+        <br><b>-Lista-dados: </b>valores que serão inseridos na tabela. Estes campos devem estar na mesma ordem descrita em lista-de-campos, todos separados por vírgula. Se for utilizado um comando SELECT o mesmo deve retornar a mesma quantidade de colunas com os mesmos tipos de dados especificados em lista-de-campos.</p>
+        <p><h2>Inserindo dados: INSERT SQL</h2></p>
+        <p> comando para atualizar registros é UPDATE, que tem a seguinte sintaxe:</p>
+        <p>Sintaxe do comando update</p>
+        <p><span class="badge badge-secondary">UPDATE nome_tabela</span></p>
+        <p><span class="badge badge-secondary">SET CAMPO = "novo_valor"</span></p>
+        <p><span class="badge badge-secondary">WHERE CONDIÇÃO</span></p>
+        <p><b>Na segunda opção foi omitida a declaração dos campos.</b> <br>Essa sintaxe funciona somente se for repassado valores para todas as colunas.<br>Podemos também passar valores através de um comando SELECT, conforme abaixo:<p><br> Insert com valores provenientes de um select</p>
+        <p><span class="badge badge-secondary">INSERT INTO EMPREGADOS(CODIGO,NOME, SALARIO, SECAO)</span></p>
+        <p><span class="badge badge-secondary">SELECT CODIGO,NOME,SALARIO, SECAO</span></p>
+        <p><span class="badge badge-secondary">FROM EMPREGADOS_FILIAL</p>
+        <p><span class="badge badge-secondary"> WHERE DEPARTAMENTO = 2</span></p>
+        <p>Neste comando todos os empregados da tabela EMPREGADOS_FILIAL foram cadastrados na tabela EMPREGADOS. <br />Se o nome dos campos não for citado no comando INSERT, o SELECT deverá retornar valores compatíveis para todos os campos disponíveis na tabela de destino.</p>
+        <h2>Atualizando dados: UPDATE SQL</h2>
+        <p>O comando para atualizar registros é UPDATE, que tem a seguinte sintaxe:</p>
+        <p>Sintaxe do comando update</p>
+        <p><span class="badge badge-secondary">UPDATE nome_tabela</p>
+        <p><span class="badge badge-secondary">SET CAMPO = "novo_valor</p>
+        <p><span class="badge badge-secondary">WHERE CONDIÇÃO</p>
+        <p>Onde:</p>
+        <p style="text-align:justify;"><b>Nome_tabela:</b> nome da tabela que será modificada <br />
+        <b>Campo:</b> campo que terá seu valor alterado<br>
+        <b>Novo_valor:</b> valor que substituirá o antigo dado cadastrado em campo <br />
+        <b>Where:</b> Se não for informado, a tabela intera será atualizada <br>
+        <b>Condição:</b> regra que impõe condição para execução do comando</p>
+        <p>Exemplos:</p>
+        <p>Exemplos de uso do comando update</p>
+        <p><span class="badge badge-secondary">UPDATE DEPARTAMENTO</p>
+        <p><span class="badge badge-secondary">SET SALARIO = 1000</p>
+        <p><span class="badge badge-secondary">WHERE CODIGODEP = 1</p>
+        <h2>Removendo dados: DELETE SQL</h2>
+        <p>O comando utilizado para apagar dados é o DELETE</p>
+        <p>Sintaxe do comando delete</p>
+        <p><span class="badge badge-secondary">DELETE FROM nome_tabela</p>
+        <p><span class="badge badge-secondary">WHERE condição</p>
+        <p>Onde:</p>
+        <p><b>Nome_tabela:</b> nome da tabela que será modificada <br>
+        <b>Where:</b> cláusula que impõe uma condição sobre a execução do comando</p>
+        <p>Exemplo: <br> Exemplo de uso do comando delete</p>
+        <p><span class="badge badge-secondary">DELETE FROM EMPREGADOS</p>
+        <p><span class="badge badge-secondary">WHERE CODIGO = 125</p>
+        <h2>Sub-consultas: SELECT SQL</h2>
+        <p style="text-align:justify;">Uma sub-consulta é uma instrução SELECT aninhada dentro de outra instrução SELECT, INSERT, DELETE ou UPDATE. <br> Veja abaixo alguns exemplos de sintaxe:</p>
+        <p>Comparação [ANY|SOME|ALL] (instrução sql) <br>Expressão [NOT] IN (instrução sql) <br>Expressão [NOT] EXISTS (instrução sql)</p>
+        <p style="text-align:justify;">Os predicados ANY e SOME, sinônimos, são utilizados para recuperar registro na consulta principal que satisfaçam a comparação com qualquer registro da sub-consulta.</p>
+        <p><b>Tabela A</b> </p>
+        <div><img class="mb-4" src="./img/tabela1.JPG" width="100"></div>
+        <p><b>Tabela B</b> </p>
+        <div><img class="mb-4" src="./img/tabela2.JPG" width="300"></div>
+        <p>Exemplo:<br> Exemplo de subconsulta</p>
+        <p><span class="badge badge-secondary">ELECT * FROM A</p>
+        <p><span class="badge badge-secondary">WHERE Y > ANY (SELECT Y FROM B WHERE X>20)</p>
+        <p>Resultado:</p>
+        <div><img class="mb-4" src="./img/tabela3.JPG" width="100"></div>
+        <p>Os registros da tabela A que forem maior do que qualquer registro do resultado da sub-consulta serão selecionados.<br> Repare que nenhum registro da tabela A é maior do que 11, no entanto, o terceiro registro é maior do que 9.</p>
+        </div>
+        <div>
+        <p id="mysql"></p>
+        <div class="p-5" class="container-fluid">
+        <h2>Gerenciador MySQL</h2>
+        <div id="cabeçalho"><img class="mb-4" src="./img/mysql.gif" width="300"></div>
+        <p style="text-align:justify;">O MySQL é um sistema gerenciador de banco de dados relacional de código aberto usado na maioria das aplicações gratuitas para gerir suas bases de dados. O serviço utiliza a linguagem SQL (Structure Query Language – Linguagem de Consulta Estruturada), que é a linguagem mais popular para inserir, acessar e gerenciar o conteúdo armazenado num banco de dados.</p>
+        <p style="text-align:justify;">Para utilizar o MySQL, é necessário instalar um servidor e uma aplicação cliente. O servidor é o responsável por armazenar os dados, responder às requisições, controlar a consistência dos dados, bem como a execução de transações concomitantes entre outras.</p>
+        </div>
+        <p id="quiz"></p>
+        <div class="p-5" class="container-fluid">
+        <div>    
+          <h1> Teste seu conhecimento sobre o assunto !</h1>
+            <div><img class="mb-4" src="./img/quiz01.jpg" width="300"></div>
+            <a href="quiz.html"><button class="btn btn-primary mb-2">Responder Quiz Agora!</button></a>
+           <a href="index.html"><button class="btn btn-primary mb-2">Voltar ao Inicio </button> </a>
+        </div>
+        </div>
+      </div>
+    <!-- /#page-content-wrapper -->
+
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
